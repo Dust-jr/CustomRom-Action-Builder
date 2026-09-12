@@ -47,9 +47,9 @@ jobs:
     - name: Clone device tree, vendor, kernel
       run: |
         cd rom
-        git clone https://github.com/Joe7500/device_xiaomi_chime.git
-        git clone https://github.com/Joe7500/vendor_xiaomi_chime.git
-        git clone https://github.com/Joe7500/valeryn_xiaomi_sm6115.git
+        git clone https://github.com/Joe7500/device_xiaomi_chime.git device/xiaomi/chime
+        git clone https://github.com/Joe7500/vendor_xiaomi_chime.git vendor/xiaomi/chime
+        git clone https://github.com/Joe7500/valeryn_xiaomi_sm6115.git kernel/xiaomi/chime
 
     - name: Prepare for build
       run: |
