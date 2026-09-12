@@ -81,7 +81,7 @@ jobs:
              -F chat_id="${{ secrets.CHAT_ID }}" \
              -F caption="✅ *AfterlifeOS Build Complete* for *Violet* 📱\n\n📦 File: *$FILE*\n🧩 Size: *$SIZE*\n🔐 MD5: \`$MD5\`\n🕒 Duration: *$DURATION minutes*\n\nUploaded via GitHub Actions." \
              -F parse_mode="Markdown" \
-             https://api.telegram.org/bot${{ secrets.TG_BOT_TOKEN }}/sendDocument
+             https://api.telegram.org/bot${{ secrets.BOT_TOKEN }}/sendDocument
 
     - name: Send Telegram Notification - Failure
       if: failure()
